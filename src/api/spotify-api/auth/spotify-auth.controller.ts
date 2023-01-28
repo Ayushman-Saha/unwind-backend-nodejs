@@ -60,7 +60,7 @@ class SpotifyApi {
           //Sending a post request for receiving the access_token
           request.post(authOptions, function(error: any, response: { statusCode: number }, body: { access_token: any }) {
             if (!error && response.statusCode === 200) {
-              res.redirect("http://locahost:6969/callback?"+ stringify(body))
+              res.redirect("http://localhost:6969/callback?"+ stringify(body))
             }
           });
 
