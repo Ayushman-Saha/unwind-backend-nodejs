@@ -8,7 +8,7 @@ const YoutubeApiDataRouter = Router()
 
 
 //Registering the routes
-YoutubeApiDataRouter.route("/searchSongBySpotifyQuery").get(YoutubeDataController.searchSongBySpotifyQuery)
+YoutubeApiDataRouter.route("/searchSongBySpotifyQuery").post(YoutubeDataController.searchSongBySpotifyQuery)
 // UserDataRouter.route("/get").get(UserDataController.getUser)
 // UserDataRouter.route("/update").post(UserDataController.modifyUser)
 // UserDataRouter.route("/delete").delete(UserDataController.deleteUser)

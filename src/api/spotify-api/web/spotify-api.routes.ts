@@ -6,6 +6,6 @@ const spotifyWebApiRoute = Router()
 
 spotifyWebApiRoute.route('/getUserProfile').get(SpotifyApiController.getUserProfile)
 spotifyWebApiRoute.route('/getPlaylists').get(SpotifyApiController.getPlaylists)
-spotifyWebApiRoute.route('/getPlaylistTracks').get(SpotifyApiController.getPlaylistTracks)
+spotifyWebApiRoute.route('/getPlaylistTracks').post(SpotifyApiController.getPlaylistTracks)
 
 export default spotifyWebApiRoute
